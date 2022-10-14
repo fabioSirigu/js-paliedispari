@@ -1,18 +1,14 @@
 // Palidroma
-
 // Chiedere all’utente di inserire una parola 
 const userWord = prompt('inserisci una parola');
-//console.log(userWord);
 const result = palindrome(userWord);
 
-/* let text = userWord; */ //text lo definisco dopo, la funzione subisce l'hoisting
-// quando l'index è maggiore della lunghezza di TEXT allora decrementa per tornare indietro
-
-function palindrome (text){
-      let reverseWord = '';
-      for (let i = text.length; i > 0; i--) {
-            let character = text.charAt(i-1);
-            reverseWord += character;
+// Creare una funzione per capire se la parola inserita è palindroma
+function palindrome (text){ //text lo definisco dopo, la funzione subisce l'hoisting
+      let reverseWord = ''; // gli assegno una variabile con una stringa vuota per poterla "riempire" dopo
+      for (let i = text.length; i > 0; i--) { // quando l'index è maggiore della lunghezza di TEXT allora decrementa per tornare indietro
+            let character = text.charAt(i-1); // charAt(n) Mi restituisce il carattere corrispondente alla posizione assegnata tra le () (-1 perchè lenght parte da 1 e non da 0 come gli array) 
+            reverseWord += character; // la stringa vuota diventa "piena"
       }
       console.log(reverseWord)
       if ( reverseWord === text){
@@ -21,7 +17,6 @@ function palindrome (text){
             console.log('non è palindroma');
       }
 }
-
 
 /* // Creare una funzione per capire se la parola inserita è palindroma
 function palindrome(word){  
