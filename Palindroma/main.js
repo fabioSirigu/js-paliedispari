@@ -4,7 +4,19 @@
 const userWord = prompt('inserisci una parola');
 console.log(userWord);
 
-// Creare una funzione per capire se la parola inserita è palindroma
+let text = userWord;
+
+// quando l'index è maggiore della lunghezza di TEXT allora decrementa per tornare indietro
+for (let i = 0; i > text.length; i--) {
+      const character = text[i];
+      console.log(character);
+
+      let reverseCharacter = (text[0] = --1);
+      console.log(reverseCharacter)
+      
+}
+
+/* // Creare una funzione per capire se la parola inserita è palindroma
 function palindrome(word){  
       // converti la stringa in un array con string.split() function  
       const characters = word.split (''); //   
@@ -25,5 +37,4 @@ function palindrome(word){
 }
 
 // chiamo la funzione con la parola che ha inserito l'utente  
-const value = palindrome(userWord); 
-
+const value = palindrome(userWord);  */
