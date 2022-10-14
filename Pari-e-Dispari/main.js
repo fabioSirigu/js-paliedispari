@@ -16,7 +16,8 @@ function randomNumber(min, max) {
 const pcNumber = randomNumber(1,5);
 console.log(pcNumber, 'numero del pc');
 
-// Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) 
+// Sommiamo i due numeri 
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) 
 
 function pariDispari (num_1, num_2){
       const sum = num_1 + num_2;
