@@ -2,17 +2,15 @@
 
 // Chiedere all’utente di inserire una parola 
 const userWord = prompt('inserisci una parola');
-console.log(userWord);
+//console.log(userWord);
+
 
 let text = userWord;
-
 // quando l'index è maggiore della lunghezza di TEXT allora decrementa per tornare indietro
-for (let i = 0; i > text.length; i--) {
+for (let i = text.length; i--;) {
       const character = text[i];
-      console.log(character);
+      console.log(character, 'sei qui');
 
-      let reverseCharacter = (text[0] = --1);
-      console.log(reverseCharacter)
       
 }
 
